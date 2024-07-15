@@ -1,0 +1,6 @@
+Added FindMatchFilters class
+Added searchMatches Class
+Added Adapter that would populate the filtered Users
+- Added Shared Preferences to existing classes/new classes to pass the ID onwards to each class to retrieve the appropriate values from data.
+- Added a default/admin user so that you don't need to register
+- Added pre-populated users. 
