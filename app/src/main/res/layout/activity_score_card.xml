@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScoreCard">
+
+    <TextView
+        android:id="@+id/scoreProName"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="28dp"
+        android:text="Your Opponent:"
+        app:layout_constraintBottom_toTopOf="@+id/scoreCourt"
+        app:layout_constraintEnd_toStartOf="@+id/editTextScoreName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/scoreCourt"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="57dp"
+        android:layout_marginBottom="22dp"
+        android:text="Court:"
+        app:layout_constraintBottom_toTopOf="@+id/scoreMatchType"
+        app:layout_constraintEnd_toStartOf="@+id/editTextScoreCourt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreProName" />
+
+    <TextView
+        android:id="@+id/scoreMatchType"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="55dp"
+        android:layout_marginBottom="15dp"
+        android:text="Match Type:"
+        app:layout_constraintBottom_toTopOf="@+id/scoreMatchLevel"
+        app:layout_constraintEnd_toStartOf="@+id/editTextScoreMatchType"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreCourt" />
+
+    <TextView
+        android:id="@+id/scoreMatchLevel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="28dp"
+        android:layout_marginEnd="59dp"
+        android:layout_marginBottom="33dp"
+        android:text="Match Level:"
+        app:layout_constraintBottom_toTopOf="@+id/scoreSetsPlayed"
+        app:layout_constraintEnd_toStartOf="@+id/editTextScoreMatchLevel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreMatchType" />
+
+    <EditText
+        android:id="@+id/editTextScoreName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:inputType="text"
+        android:minHeight="48dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/scoreProName"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <EditText
+        android:id="@+id/editTextScoreCourt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/scoreCourt"
+        app:layout_constraintTop_toBottomOf="@+id/editTextScoreName"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/editTextScoreMatchType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="25dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/editTextScoreMatchLevel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/scoreMatchType"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/editTextScoreMatchLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="36dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/scoreSetsPlayed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/scoreMatchLevel"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/scoreSetsPlayed"
+        android:layout_width="153dp"
+        android:layout_height="0dp"
+        android:text="Sets Played:"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/scoreRadioGroup"
+        app:layout_constraintEnd_toEndOf="@+id/scoreRadioGroup"
+        app:layout_constraintStart_toStartOf="@+id/scoreRadioGroup"
+        app:layout_constraintTop_toBottomOf="@+id/scoreMatchLevel" />
+
+    <RadioGroup
+        android:id="@+id/scoreRadioGroup"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="23dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toTopOf="@+id/textViewOpponentsScore"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoreSetsPlayed">
+
+        <RadioButton
+            android:id="@+id/score2Sets"
+            android:layout_width="135dp"
+            android:layout_height="wrap_content"
+            android:text="2 Sets" />
+
+        <RadioButton
+            android:id="@+id/score3Sets"
+            android:layout_width="157dp"
+            android:layout_height="wrap_content"
+            android:text="3 Sets" />
+
+        <RadioButton
+            android:id="@+id/score4Sets"
+            android:layout_width="153dp"
+            android:layout_height="wrap_content"
+            android:text="4 Sets" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/txtViewYourScore"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="73dp"
+        android:layout_marginEnd="89dp"
+        android:layout_marginBottom="75dp"
+        android:text="Sets You Won"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextSetsWon"
+        app:layout_constraintEnd_toStartOf="@+id/textViewOpponentsScore"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scoreRadioGroup" />
+
+    <EditText
+        android:id="@+id/editTextSetsWon"
+        android:layout_width="0dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="141dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginBottom="146dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/editTextOPPScore"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scoreRadioGroup"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/textViewOpponentsScore"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="21dp"
+        android:layout_marginBottom="14dp"
+        android:text="Opponen't Sets Won"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextOPPScore"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/txtViewYourScore"
+        app:layout_constraintTop_toBottomOf="@+id/scoreRadioGroup" />
+
+    <EditText
+        android:id="@+id/editTextOPPScore"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="34dp"
+        android:layout_marginBottom="146dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/editTextSetsWon"
+        app:layout_constraintTop_toBottomOf="@+id/textViewOpponentsScore"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ConfirmScorebtn"
+        android:layout_width="156dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_background"
+        android:text="Confirm Score"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.113"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/ReviseScorebtn"
+        android:layout_width="165dp"
+        android:layout_height="71dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_background"
+        android:text="Revise Score"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.752"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="138dp"
+        android:text="Apply/Confirm Score"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSetsWon" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardMatches"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    app:cardElevation="5dp"
+    app:contentPadding="4dp"
+    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="698dp">
+
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/edittextProName"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:src="@tools:sample/avatars" />
+
+        <TextView
+            android:id="@+id/edittextProName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="25dp"
+            android:text="Name:"
+            app:layout_constraintEnd_toStartOf="@+id/editTextProName"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/proposedSkillLevel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="15dp"
+            android:text="Skill Level:"
+            app:layout_constraintEnd_toStartOf="@+id/editTxtProSkillLevel"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/edittextProName" />
+
+        <TextView
+            android:id="@+id/textviewLevelPro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="196dp"
+            android:layout_marginEnd="30dp"
+            android:text="Match Level Proposed:"
+            app:layout_constraintEnd_toStartOf="@+id/editTextproLevel"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTxtProSkillLevel" />
+
+        <EditText
+            android:id="@+id/editTextProName"
+            android:layout_width="150dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="43dp"
+            android:ems="10"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/edittextProName"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/editTxtProSkillLevel"
+            android:layout_width="152dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="22dp"
+            android:layout_marginEnd="26dp"
+            android:ems="10"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/proposedSkillLevel"
+            app:layout_constraintTop_toBottomOf="@+id/editTextProName"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/editTextproLevel"
+            android:layout_width="117dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="196dp"
+            android:layout_marginEnd="60dp"
+            android:ems="10"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textviewLevelPro"
+            app:layout_constraintTop_toBottomOf="@+id/editTxtProSkillLevel"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textviewProCourt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="73dp"
+            android:layout_marginEnd="40dp"
+            android:text="Proposed Court:"
+            app:layout_constraintEnd_toStartOf="@+id/editTextProCourt"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <EditText
+            android:id="@+id/editTextProCourt"
+            android:layout_width="171dp"
+            android:layout_height="38dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="35dp"
+            android:ems="10"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textviewProCourt"
+            app:layout_constraintTop_toBottomOf="@+id/editTxtProSkillLevel"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/textviewProTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="44dp"
+            android:layout_marginEnd="275dp"
+            android:text="Proposed Time:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textviewProCourt" />
+
+        <EditText
+            android:id="@+id/edittextproTime"
+            android:layout_width="158dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="69dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="48dp"
+            android:ems="10"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/textviewProTime"
+            app:layout_constraintTop_toBottomOf="@+id/editTextProCourt"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/textviewProMatchType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="114dp"
+            android:layout_marginTop="9dp"
+            android:layout_marginEnd="8dp"
+            android:text="Preferred Match Type:"
+            app:layout_constraintEnd_toStartOf="@+id/editTextMatchType"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editTxtProSkillLevel" />
+
+        <EditText
+            android:id="@+id/editTextMatchType"
+            android:layout_width="114dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="16dp"
+            android:ems="10"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textviewProMatchType"
+            app:layout_constraintTop_toBottomOf="@+id/editTxtProSkillLevel"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/textviewAddComm"
+            android:layout_width="151dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="84dp"
+            android:layout_marginEnd="226dp"
+            android:text="Additional Comments Added:"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textviewLevelPro" />
+
+        <EditText
+            android:id="@+id/editTxtAddComments"
+            android:layout_width="177dp"
+            android:layout_height="140dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="29dp"
+            android:layout_marginEnd="26dp"
+            android:ems="10"
+            android:inputType="text"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textviewAddComm"
+            app:layout_constraintTop_toBottomOf="@+id/editTextproLevel"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/rejectMatchBtn"
+            android:layout_width="152dp"
+            android:layout_height="53dp"
+            android:layout_marginBottom="44dp"
+            android:background="@drawable/button_background"
+            android:text="Reject Match Proposal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.892"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/acceptMatchbtn"
+            android:layout_width="136dp"
+            android:layout_height="52dp"
+            android:layout_marginBottom="44dp"
+            android:background="@drawable/button_background"
+            android:text="Accept Match Proposal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.096"
+            app:layout_constraintStart_toStartOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

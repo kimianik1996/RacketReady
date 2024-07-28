@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MatchDetailsRequest">
+
+    <Spinner
+        android:id="@+id/selectCourtSpinner"
+        android:layout_width="254dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/selectCourttxt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/selectCourttxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:layout_marginTop="154dp"
+        android:layout_marginBottom="111dp"
+        android:text="Select Court:"
+        app:layout_constraintBottom_toTopOf="@+id/matchTypetxt"
+        app:layout_constraintEnd_toStartOf="@+id/selectCourtSpinner"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/policyCheckBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="132dp"
+        android:layout_marginEnd="173dp"
+        android:text="I Agree to Terms and Policies"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeRadio" />
+
+    <RadioGroup
+        android:id="@+id/timeRadio"
+        android:layout_width="258dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="31dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/timeTxt"
+        app:layout_constraintTop_toBottomOf="@+id/compFriendlyRadio">
+
+        <RadioButton
+            android:id="@+id/morningRadio"
+            android:layout_width="121dp"
+            android:layout_height="55dp"
+            android:text="Morning" />
+
+        <RadioButton
+            android:id="@+id/afternoonRadio"
+            android:layout_width="142dp"
+            android:layout_height="match_parent"
+            android:text="Afternoon" />
+
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/timeTxt"
+        android:layout_width="57dp"
+        android:layout_height="29dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="116dp"
+        android:layout_marginEnd="10dp"
+        android:text="Time:"
+        app:layout_constraintEnd_toStartOf="@+id/timeRadio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/matchTypetxt" />
+
+    <RadioGroup
+        android:id="@+id/compFriendlyRadio"
+        android:layout_width="258dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="80dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toEndOf="@+id/matchTypetxt"
+        app:layout_constraintTop_toBottomOf="@+id/selectCourtSpinner">
+
+        <RadioButton
+            android:id="@+id/competitveRadio"
+            android:layout_width="121dp"
+            android:layout_height="55dp"
+            android:text="Competitve" />
+
+        <RadioButton
+            android:id="@+id/FriendlyRadio"
+            android:layout_width="142dp"
+            android:layout_height="match_parent"
+            android:text="Friendly" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/matchTypetxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="84dp"
+        android:layout_marginEnd="29dp"
+        android:text="Match Type:"
+        app:layout_constraintEnd_toStartOf="@+id/compFriendlyRadio"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/selectCourttxt" />
+
+    <EditText
+        android:id="@+id/editTxtadComment"
+        android:layout_width="261dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginEnd="28dp"
+        android:ems="10"
+        android:inputType="text"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/adCommentTxt"
+        app:layout_constraintTop_toBottomOf="@+id/timeRadio"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <TextView
+        android:id="@+id/adCommentTxt"
+        android:layout_width="97dp"
+        android:layout_height="43dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="9dp"
+        android:text="Additional Comments:"
+        app:layout_constraintEnd_toStartOf="@+id/editTxtadComment"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/timeTxt" />
+
+    <TextView
+        android:id="@+id/fillMatchTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="38dp"
+        android:layout_marginEnd="94dp"
+        android:text="Fill Match Details"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/sendMatchRequestBtn"
+        android:layout_width="166dp"
+        android:layout_height="62dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/button_background"
+        android:text="Propose Match"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

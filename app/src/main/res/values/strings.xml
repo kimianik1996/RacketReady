@@ -1,0 +1,79 @@
+<resources>
+    <string name="app_name">RacketReadyApplication</string>
+    <string name="txtRegTitle">Join RacketReady</string>
+    <string name="txtRegDesc">Connect with Tennis Players,\nJoin Tournaments and Climb the Ranks!</string>
+    <string name="txtFName">First Name: </string>
+    <string name="txtLName">Last Name: </string>
+    <string name="txtEmail">Email: </string>
+    <string name="txtPhone">Phone: </string>
+    <string name="txtPassword">Password: </string>
+    <string name="txtConfirmPassword">Confirm Password: </string>
+    <string name="txtskillLevel">Skill Level: </string>
+    <string name="txtMatchType">Match Type: </string>
+    <string name="txtPrefDays">Preferred Days: </string>
+    <string name="txtPrefTime">Preferred Time: </string>
+    <string name="txtLocation">Location: </string>
+    <string name="txtProfilePic">Profile Picture: </string>
+    <string name="txtNext">Next</string>
+    <string name="btnLogin">Login</string>
+    <string name="tvLoginTitle">Login To RacketReady</string>
+    <string name="btnSignUp">Sign Up</string>
+    <string-array name="courtNames">
+        <item>Kennedy Tennis Courts</item>
+        <item>Sunshine Hills Tennis Club</item>
+        <item>RacketReady Tennis Court</item>
+    </string-array>
+    <string-array name="skillLevels">
+        <item>Beginner</item>
+        <item>Intermediate</item>
+        <item>Advanced</item>
+        <item>Professional</item>
+    </string-array>
+    <string-array name="preferredDays">
+        <item>Monday</item>
+        <item>Tuesday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+        <item>Sunday</item>
+    </string-array>
+    <string name="txtDOB">Date Of Birth (DD/MM/YYYY): </string>
+    <string name="btnBack">Back</string>
+    <string name="btnRegister">Register!</string>
+    <string name="btnImage">Find Image</string>
+    <string name="txtNewUser">New to RacketReady?</string>
+    <string name="btnUserProfile">View User Profile</string>
+    <string name="tvFavDays">Favorite Days</string>
+    <string name="tvContactInfo">Contact Information</string>
+    <string name="btnMembership">Manage Membership</string>
+    <string name="btnEditProfile">Edit Profile</string>
+    <string name="tvMembershipStatus">Membership Status</string>
+    <string name="tvSettings">Settings</string>
+    <string name="btnEditPassword">Change Password</string>
+    <string name="btnEditProfilePic">Change Profile Picture</string>
+    <string name="btnEditPreferences">Edit Match Preferences</string>
+    <string name="btnApplyChanges">Apply Changes</string>
+    <string name="tvNewPassword">Enter your New Password</string>
+    <string name="tvCurrentPassword">Enter your Current Password</string>
+    <string name="tvConfirmNewPassword">Confirm New Password</string>
+    <string name="tvWelcome">Welcome to RacketReady!</string>
+    <string-array name="matchTypes">
+        <item>Singles</item>
+        <item>Doubles</item>
+    </string-array>
+    <string-array name="locationData">
+        <item>British Columbia</item>
+        <item>Alberta</item>
+        <item>Saskatchewan</item>
+        <item>Manitoba</item>
+        <item>Ontario</item>
+        <item>Quebec</item>
+        <item>Nova Scotia</item>
+        <item>New Brunswick</item>
+        <item>Prince George Island</item>
+        <item>Yukon</item>
+        <item>Northwest Territories</item>
+        <item>Nunavut</item>
+    </string-array>
+</resources>
